@@ -6,11 +6,11 @@ const Business = (props) => {
     }, [props]);
 
   return (
-    <div>
+    <main>
         <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
       </p>
-    </div>
+    </main>
   )
 }
 

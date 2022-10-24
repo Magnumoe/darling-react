@@ -5,11 +5,11 @@ const Home = (props) => {
     props.handlePageChange("Home");
   }, [props]);
   return (
-    <div>
+    <main>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
       </p>
-    </div>
+    </main>
   )
 }
 

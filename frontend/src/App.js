@@ -12,6 +12,7 @@ import Positions from "./pages/Positions";
 
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
   
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/business" element={<Business handlePageChange={handlePageChange} />} />
         <Route path="/positions" element={<Positions handlePageChange={handlePageChange} />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
