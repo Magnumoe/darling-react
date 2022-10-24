@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 
-const About = () => {
+const About = (props) => {
+  useEffect(() => {
+    props.handlePageChange("About");
+  }, [props]);
+
   return (
     <div>
-      <h1>About</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
+      </p>
     </div>
   )
 }

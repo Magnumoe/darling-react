@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-const Positions = () => {
-  return (
+const Positions = (props) => {
+  useEffect(() => {
+    props.handlePageChange("Positions");
+    }, [props]);
+
+    return (
     <div>
-        <h1>Positions</h1>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
+      </p>
     </div>
   )
 }

@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-const NotFound = () => {
+const NotFound = (props) => {
+  useEffect(() => {
+    props.handlePageChange("404: Page Not Found");
+  }, [props]);
+
   return (
     <div>
-      <h1>404 Page Not Found</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
+      </p>
     </div>
   )
 }

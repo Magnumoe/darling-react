@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-const Business = () => {
+const Business = (props) => {
+    useEffect(() => {
+        props.handlePageChange("For Businesses");
+    }, [props]);
+
   return (
     <div>
-        <h1> For businesses</h1>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
+      </p>
     </div>
   )
 }
