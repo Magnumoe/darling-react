@@ -55,6 +55,28 @@ const Navbar = (props) => {
                         </li>
                     </NavLink>
 
+                    <NavLink
+                        to="/business"
+                        className={(navData) =>
+                            navData.isActive ? 'active' : 'NavLink'}
+                        onClick={() => props.setNavbarActive(false)}
+                    >
+                        <li>
+                            <span className="material-icons">For businesses</span>
+                        </li>
+                    </NavLink>
+
+                    <NavLink
+                        to="/positions"
+                        className={(navData) =>
+                            navData.isActive ? 'active' : 'NavLink'}
+                        onClick={() => props.setNavbarActive(false)}
+                    >
+                        <li>
+                            <span className="material-icons">Positions</span>
+                        </li>
+                    </NavLink>
+
                     <li>
                         <a rel="noreferrer" href="https://www.linkedin.com/company/darling-linjeforening/" target="_blank" className="social-link">
                             <span className="material-icons">linkedin</span>
