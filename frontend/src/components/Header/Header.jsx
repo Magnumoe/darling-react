@@ -4,10 +4,10 @@ import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
 
 const Header = (props) => {
   return (
-    <div className='Header'>
+    <header className='Header'>
         <h1>{props.title}</h1>
         <HamburgerMenu handleNavbar={props.handleNavbar}/>
-    </div>
+    </header>
   )
 }
 

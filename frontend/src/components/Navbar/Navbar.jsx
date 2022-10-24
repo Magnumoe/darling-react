@@ -6,15 +6,15 @@ import "./navbar.css";
 const Navbar = (props) => {
 
     return (
-        <nav className={`navbar ${props.navbarActive ? 'active' : 'collapsed'}`}>
+        <nav className={`navbar ${props.navbarActive ? 'visible' : 'collapsed'}`}>
             <>
                 <ul>
 
                     <NavLink
                         to="/"
                         className={(navData) =>
-                            navData.isActive ? 'active' : 'Navlink'}
-                        onClick={() => props.setNavbarActive(false)}
+                            navData.isActive ? 'active' : 'NavLink'}
+                        end // end used to be exact in v5
                     >
                         <li>
                             <span className="material-icons">logo</span>
@@ -26,7 +26,7 @@ const Navbar = (props) => {
                         to="/"
                         className={(navData) =>
                             navData.isActive ? 'active' : 'disabled'}
-                        onClick={() => props.setNavbarActive(false)}
+                        end // end used to be exact in v5
                     >
                         <li>
                             <span className="material-icons">Home</span>
@@ -37,7 +37,6 @@ const Navbar = (props) => {
                         to="/about"
                         className={(navData) =>
                             navData.isActive ? 'active' : 'NavLink'}
-                        onClick={() => props.setNavbarActive(false)}
                     >
                         <li>
                             <span className="material-icons">About</span>
@@ -48,7 +47,6 @@ const Navbar = (props) => {
                         to="/contact"
                         className={(navData) =>
                             navData.isActive ? 'active' : 'NavLink'}
-                        onClick={() => props.setNavbarActive(false)}
                     >
                         <li>
                             <span className="material-icons">Contact</span>
@@ -59,7 +57,6 @@ const Navbar = (props) => {
                         to="/business"
                         className={(navData) =>
                             navData.isActive ? 'active' : 'NavLink'}
-                        onClick={() => props.setNavbarActive(false)}
                     >
                         <li>
                             <span className="material-icons">For businesses</span>
@@ -70,7 +67,6 @@ const Navbar = (props) => {
                         to="/positions"
                         className={(navData) =>
                             navData.isActive ? 'active' : 'NavLink'}
-                        onClick={() => props.setNavbarActive(false)}
                     >
                         <li>
                             <span className="material-icons">Positions</span>
