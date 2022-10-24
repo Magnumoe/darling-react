@@ -27,7 +27,7 @@ const App = () => {
     navbarActive ? setNavbarActive(false) : setNavbarActive(true);
   }
   return (
-    <main className="App">
+    <div className="App">
       <Navbar navbarActive={navbarActive} setNavbarActive={handleNavbar} />
       <Header title={Page} handleHamburger={handleNavbar} />
       <Routes>
@@ -38,7 +38,7 @@ const App = () => {
         <Route path="/business" element={<Business handlePageChange={handlePageChange} />} />
         <Route path="/positions" element={<Positions handlePageChange={handlePageChange} />} />
       </Routes>
-    </main>
+    </div>
   );
 }
 
